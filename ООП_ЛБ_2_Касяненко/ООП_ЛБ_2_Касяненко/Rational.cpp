@@ -35,6 +35,18 @@ void Rational::Display()
     cout << endl << "Mnoj: " << endl << MulUp << endl << "---" << endl << MulDown << endl;
 
     cout << endl << "Dil: " << endl << DivUp << endl << "---" << endl << DivDown << endl;
+
+    cout << endl << "Equals: " << endl << a << "\t\t" << c << endl << "---" << "\t=?\t" << "---" << endl << b << "\t\t" << d << endl;
+
+    if (check == 1) {
+        cout << "Greter " << endl << "Drib #1 Greater than #2" << endl << a << endl << "---" << endl << b << endl;
+    }
+    else if(check == 0) {
+        cout << "Drib #2 Greater than #1 " << endl << c << endl << "---" << endl << d << " " << endl;
+    }
+    else {
+        cout << "Drib #1 = #2 " << endl;
+    }
 }
 
 void Rational::Add()
@@ -63,7 +75,16 @@ void Rational::Div()
 
 void Rational::Equal()
 {
-    if (a / b = c / d) {
-        
+
+}
+
+void Rational::Greter()
+{
+    if (a / b > c / d) {
+        check = 1;
+    }
+    else {
+        check = 0;
     }
 }
+

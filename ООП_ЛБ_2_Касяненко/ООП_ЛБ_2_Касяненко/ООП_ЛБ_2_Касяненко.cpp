@@ -14,7 +14,6 @@ int main()
     порівняння equal(), greate(), less().
     Повинна бути реалізовані функція скорочення дробу reduce(), яка обов'язково
     викликається при виконанні арифметичних операцій. */
-
     Rational Check;
     Check.Init(1, 2, 3, 4);
     Check.Read();
@@ -22,6 +21,7 @@ int main()
     Check.Sub();
     Check.Mul();
     Check.Div();
+    Check.Equal();
     Check.Display();
 
 }
